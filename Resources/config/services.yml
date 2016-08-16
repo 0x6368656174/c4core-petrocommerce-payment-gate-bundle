@@ -39,7 +39,7 @@ services:
       - [setCaCertFileDev, ['%iq_c4_core_petrocommerce_payment_gate.notif_ca_cert_file_dev%']]
 
   iq_petrocommerce_payment_gate.twig_instance_of_extension:
-    class: ItQuasar\PetrocommercePaymentGateBundle\Twig\TwigInstanceOf
+    class: ItQuasar\C4CorePetrocommercePaymentGateBundle\Twig\TwigInstanceOf
     tags:
       - { name: twig.extension }
 

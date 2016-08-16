@@ -13,7 +13,6 @@ use ItQuasar\C4CoreBundle\Common\GetterSetter;
 
 /**
  * Class PetrocommerceBankTransactionResponse
- * @package ItQuasar\PetrocommercePaymentGateBundle\Entity
  *
  * @method int getAction()
  * @method PetrocommerceBankTransactionResponse setAction(int $action)

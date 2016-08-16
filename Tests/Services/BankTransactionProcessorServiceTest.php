@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\Tests\Services;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\Tests\Services;
 
 use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
 use ItQuasar\C4CorePetrocommercePaymentGateBundle\Services\GateService;

@@ -13,7 +13,6 @@ use ItQuasar\C4CoreBundle\Common\GetterSetter;
 
 /**
  * Class PetrocommerceBankTransactionReversalRequest
- * @package ItQuasar\PetrocommercePaymentGateBundle\Entity
  *
  * @method string getRetrievalReferenceNumber()
  * @method PetrocommerceBankTransactionResponse setRetrievalReferenceNumber(string $number)

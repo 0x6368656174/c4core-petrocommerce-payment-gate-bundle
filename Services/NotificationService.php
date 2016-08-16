@@ -10,15 +10,15 @@
 
 namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\Services;
 
-use ItQuasar\CommonBundle\Services\Curl;
-use ItQuasar\CommonBundle\Services\FilePaths;
-use ItQuasar\PaymentGateBundle\AbstractService\Notification;
-use ItQuasar\PaymentGateBundle\Entity\Order;
-use ItQuasar\PaymentGateBundle\Exception\ConnectToNotifyServiceException;
-use ItQuasar\PaymentGateBundle\Exception\NotFoundBankPayRequestException;
-use ItQuasar\PaymentGateBundle\Exception\ParseNotifyServiceResponseException;
-use ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest;
-use ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
+use ItQuasar\C4CoreBundle\Services\Curl;
+use ItQuasar\C4CoreBundle\Services\FilePaths;
+use ItQuasar\C4CoreBundle\AbstractService\Notification;
+use ItQuasar\C4CoreBundle\Entity\Order;
+use ItQuasar\C4CoreBundle\Exception\ConnectToNotifyServiceException;
+use ItQuasar\C4CoreBundle\Exception\NotFoundBankPayRequestException;
+use ItQuasar\C4CoreBundle\Exception\ParseNotifyServiceResponseException;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
 use Symfony\Component\Translation\Translator;
 
 class NotificationService extends Notification

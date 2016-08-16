@@ -15,7 +15,6 @@ use ItQuasar\C4CoreBundle\Entity\BankExchangeDocument;
 
 /**
  * Class PetrocommerceBankTransaction
- * @package ItQuasar\PetrocommercePaymentGateBundle\Entity
  *
  * @method float getAmount()
  * @method BankExchangeDocument setAmount(float $amount)

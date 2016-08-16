@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\Twig;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\Twig;
 
 use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest;
 use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;

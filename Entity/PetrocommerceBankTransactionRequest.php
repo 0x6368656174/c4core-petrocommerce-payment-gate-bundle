@@ -13,7 +13,6 @@ use ItQuasar\C4CoreBundle\Common\GetterSetter;
 
 /**
  * Class PetrocommerceBankTransactionRequest
- * @package ItQuasar\PetrocommercePaymentGateBundle\Entity
  *
  * @method string getTimezoneOffset()
  * @method PetrocommerceBankTransactionRequest setTimezoneOffset(string $offset)
