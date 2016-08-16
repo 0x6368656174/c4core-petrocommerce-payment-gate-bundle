@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright © 2015 Pavel A. Puchkov
+
+    This file is part of the kino-khv.ru project.
+
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
+-->
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest" table="petrocommerce_bank_transaction_requests">
+        <field name="timezoneOffset" type="string"/>
+        <field name="merchantName" type="string"/>
+        <field name="merchantUrl" type="string"/>
+        <field name="description" type="string"/>
+        <field name="backUrl" type="string"/>
+    </entity>
+
+</doctrine-mapping>

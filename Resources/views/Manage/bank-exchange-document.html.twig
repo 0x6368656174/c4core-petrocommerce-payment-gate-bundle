@@ -1,0 +1,74 @@
+{% trans_default_domain "petrocommerce-payment-gate" %}
+
+{% if bankDocument is PetrocommerceBankTransactionReversalRequest %}
+    <div class="row">
+        <div class="col-sm-2">
+            <h3><i class="fa fa-upload"></i> {{ 'label.reversal_request'|trans }}</h3>
+        </div>
+        <div class="col-sm-10">
+            <dl class="dl-horizontal">
+                <dt>{{ 'label.bank_order'|trans }}:</dt> <dd>{{ bankDocument.bankOrder }}</dd>
+                <dt>{{ 'label.transaction_type'|trans }}:</dt> <dd>{{ bankDocument.transactionType }}</dd>
+                <dt>{{ 'label.amount'|trans }}:</dt> <dd>{{ bankDocument.amount|number_format(2, '.', '') }}</dd>
+                <dt>{{ 'label.currency'|trans }}:</dt> <dd>{{ bankDocument.currency }}</dd>
+                <dt>{{ 'label.timestamp'|trans }}:</dt> <dd>{{ bankDocument.timestamp }}</dd>
+                <dt>{{ 'label.merchant_id'|trans }}:</dt> <dd>{{ bankDocument.merchantId }}</dd>
+                <dt>{{ 'label.terminal_id'|trans }}:</dt> <dd>{{ bankDocument.terminalId }}</dd>
+                <dt>{{ 'label.nonce'|trans }}:</dt> <dd>{{ bankDocument.nonce }}</dd>
+                <dt>{{ 'label.back_url'|trans }}:</dt> <dd>{{ bankDocument.backUrl }}</dd>
+                <dt>{{ 'label.timezone_offset'|trans }}:</dt> <dd>{{ bankDocument.timezoneOffset }}</dd>
+                <dt>{{ 'label.merchant_name'|trans }}:</dt> <dd>{{ bankDocument.merchantName }}</dd>
+                <dt>{{ 'label.merchant_url'|trans }}:</dt> <dd>{{ bankDocument.merchantUrl }}</dd>
+                <dt>{{ 'label.description'|trans }}:</dt> <dd>{{ bankDocument.description }}</dd>
+                <dt>{{ 'label.retrival_reference_number'|trans }}:</dt> <dd>{{ bankDocument.retrievalReferenceNumber }}</dd>
+                <dt>{{ 'label.internal_reference_number'|trans }}:</dt> <dd>{{ bankDocument.internalReferenceNumber }}</dd>
+            </dl>
+        </div>
+    </div>
+{% elseif bankDocument is PetrocommerceBankTransactionRequest %}
+    <div class="row">
+        <div class="col-sm-2">
+            <h3><i class="fa fa-upload"></i> {{ 'label.request'|trans }}</h3>
+        </div>
+        <div class="col-sm-10">
+            <dl class="dl-horizontal">
+                <dt>{{ 'label.bank_order'|trans }}:</dt> <dd>{{ bankDocument.bankOrder }}</dd>
+                <dt>{{ 'label.transaction_type'|trans }}:</dt> <dd>{{ bankDocument.transactionType }}</dd>
+                <dt>{{ 'label.amount'|trans }}:</dt> <dd>{{ bankDocument.amount|number_format(2, '.', '') }}</dd>
+                <dt>{{ 'label.currency'|trans }}:</dt> <dd>{{ bankDocument.currency }}</dd>
+                <dt>{{ 'label.timestamp'|trans }}:</dt> <dd>{{ bankDocument.timestamp }}</dd>
+                <dt>{{ 'label.merchant_id'|trans }}:</dt> <dd>{{ bankDocument.merchantId }}</dd>
+                <dt>{{ 'label.terminal_id'|trans }}:</dt> <dd>{{ bankDocument.terminalId }}</dd>
+                <dt>{{ 'label.nonce'|trans }}:</dt> <dd>{{ bankDocument.nonce }}</dd>
+                <dt>{{ 'label.back_url'|trans }}:</dt> <dd>{{ bankDocument.backUrl }}</dd>
+                <dt>{{ 'label.timezone_offset'|trans }}:</dt> <dd>{{ bankDocument.timezoneOffset }}</dd>
+                <dt>{{ 'label.merchant_name'|trans }}:</dt> <dd>{{ bankDocument.merchantName }}</dd>
+                <dt>{{ 'label.merchant_url'|trans }}:</dt> <dd>{{ bankDocument.merchantUrl }}</dd>
+                <dt>{{ 'label.description'|trans }}:</dt> <dd>{{ bankDocument.description }}</dd>
+            </dl>
+        </div>
+    </div>
+{% elseif bankDocument is PetrocommerceBankTransactionResponse %}
+    <div class="row">
+        <div class="col-sm-2">
+            <h3><i class="fa fa-download"></i> {{ 'label.response'|trans }}</h3>
+        </div>
+        <div class="col-sm-10">
+            <dl class="dl-horizontal">
+                <dt>{{ 'label.bank_order'|trans }}:</dt> <dd>{{ bankDocument.bankOrder }}</dd>
+                <dt>{{ 'label.transaction_type'|trans }}:</dt> <dd>{{ bankDocument.transactionType }}</dd>
+                <dt>{{ 'label.amount'|trans }}:</dt> <dd>{{ bankDocument.amount|number_format(2, '.', '') }}</dd>
+                <dt>{{ 'label.currency'|trans }}:</dt> <dd>{{ bankDocument.currency }}</dd>
+                <dt>{{ 'label.timestamp'|trans }}:</dt> <dd>{{ bankDocument.timestamp }}</dd>
+                <dt>{{ 'label.merchant_id'|trans }}:</dt> <dd>{{ bankDocument.merchantId }}</dd>
+                <dt>{{ 'label.terminal_id'|trans }}:</dt> <dd>{{ bankDocument.terminalId }}</dd>
+                <dt>{{ 'label.nonce'|trans }}:</dt> <dd>{{ bankDocument.nonce }}</dd>
+                <dt>{{ 'label.action'|trans }}:</dt> <dd>{{ bankDocument.action }}</dd>
+                <dt>{{ 'label.response_code'|trans }}:</dt> <dd>{{ '%02d'|format(bankDocument.responseCode) }}</dd>
+                <dt>{{ 'label.approval_code'|trans }}:</dt> <dd>{{ bankDocument.approvalCode }}</dd>
+                <dt>{{ 'label.retrival_reference_number'|trans }}:</dt> <dd>{{ bankDocument.retrievalReferenceNumber }}</dd>
+                <dt>{{ 'label.internal_reference_number'|trans }}:</dt> <dd>{{ bankDocument.internalReferenceNumber }}</dd>
+            </dl>
+        </div>
+    </div>
+{% endif %}

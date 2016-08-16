@@ -1,0 +1,45 @@
+services:
+  iq_petrocommerce_payment_gate.gate:
+    class: ItQuasar\PetrocommercePaymentGateBundle\Services\GateService
+    arguments:
+      - '@doctrine.orm.entity_manager'
+      - '@translator.default'
+      - '@iq_c4_core.file_paths'
+      - '@router'
+    calls:
+      - [setOrderEntity, ['%iq_petrocommerce_payment_gate.order_entity%']]
+      - [setEnvironment, ['%kernel.environment%']]
+      - [setCurrency, ['%iq_petrocommerce_payment_gate.currency%']]
+      - [setMerchantName, ['%iq_petrocommerce_payment_gate.merchant_name%']]
+      - [setMerchantId, ['%iq_petrocommerce_payment_gate.merchant_id%']]
+      - [setSingPrivateKeyFile, ['%iq_petrocommerce_payment_gate.request_sign_key_file%']]
+      - [setSingBankPublicKeyFile, ['%iq_petrocommerce_payment_gate.response_sign_key_file%']]
+      - [setIaUrl, ['%iq_petrocommerce_payment_gate.ia_url%']]
+      - [setTerminalIdDev, ['%iq_petrocommerce_payment_gate.terminal_id_dev%']]
+      - [setMerchantIdDev, ['%iq_petrocommerce_payment_gate.merchant_id_dev%']]
+      - [setSingPrivateKeyFileDev, ['%iq_petrocommerce_payment_gate.request_sign_key_file_dev%']]
+      - [setSingBankPublicKeyFileDev, ['%iq_petrocommerce_payment_gate.response_sign_key_file_dev%']]
+      - [setIaUrlDev, ['%iq_petrocommerce_payment_gate.ia_url_dev%']]
+
+  iq_petrocommerce_payment_gate.notification:
+    class: ItQuasar\PetrocommercePaymentGateBundle\Services\NotificationService
+    arguments:
+      - '@iq_c4_core.curl'
+      - '@translator.default'
+      - '@iq_c4_core.file_paths'
+    calls:
+      - [setEnvironment, ['%kernel.environment%']]
+      - [setNotifyUrl, ['%iq_petrocommerce_payment_gate.notif_url%']]
+      - [setClientCertFile, ['%iq_petrocommerce_payment_gate.notif_client_cert_file%']]
+      - [setClientKeyFile, ['%iq_petrocommerce_payment_gate.notif_client_key_file%']]
+      - [setCaCertFile, ['%iq_petrocommerce_payment_gate.notif_ca_cert_file%']]
+      - [setNotifyUrlDev, ['%iq_petrocommerce_payment_gate.notif_url_dev%']]
+      - [setClientCertFileDev, ['%iq_petrocommerce_payment_gate.notif_client_cert_file_dev%']]
+      - [setClientKeyFileDev, ['%iq_petrocommerce_payment_gate.notif_client_key_file_dev%']]
+      - [setCaCertFileDev, ['%iq_petrocommerce_payment_gate.notif_ca_cert_file_dev%']]
+
+  iq_petrocommerce_payment_gate.twig_instance_of_extension:
+    class: ItQuasar\PetrocommercePaymentGateBundle\Twig\TwigInstanceOf
+    tags:
+      - { name: twig.extension }
+

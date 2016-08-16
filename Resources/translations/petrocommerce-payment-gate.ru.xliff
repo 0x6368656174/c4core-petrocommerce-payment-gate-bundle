@@ -1,0 +1,91 @@
+<?xml version="1.0"?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+    <file source-language="en" datatype="plaintext" original="file.ext">
+        <body>
+            <trans-unit id="label.bank_order">
+                <source>label.bank_order</source>
+                <target>Номер заказа банка</target>
+            </trans-unit>
+            <trans-unit id="label.transaction_type">
+                <source>label.transaction_type</source>
+                <target>Тип транзакции</target>
+            </trans-unit>
+            <trans-unit id="label.currency">
+                <source>label.currency</source>
+                <target>Валюта</target>
+            </trans-unit>
+            <trans-unit id="label.timestamp">
+                <source>label.timestamp</source>
+                <target>Метка времени</target>
+            </trans-unit>
+            <trans-unit id="label.timezone_offset">
+                <source>label.timezone_offset</source>
+                <target>Временая зона</target>
+            </trans-unit>
+            <trans-unit id="label.merchant_name">
+                <source>label.merchant_name</source>
+                <target>Имя продавца</target>
+            </trans-unit>
+            <trans-unit id="label.merchant_id">
+                <source>label.merchant_id</source>
+                <target>ID продавца</target>
+            </trans-unit>
+            <trans-unit id="label.merchant_url">
+                <source>label.merchant_url</source>
+                <target>URL продавца</target>
+            </trans-unit>
+            <trans-unit id="label.terminal_id">
+                <source>label.terminal_id</source>
+                <target>ID терминала</target>
+            </trans-unit>
+            <trans-unit id="label.back_url">
+                <source>label.back_url</source>
+                <target>URL результата</target>
+            </trans-unit>
+            <trans-unit id="label.nonce">
+                <source>label.nonce</source>
+                <target>Соль сообщения</target>
+            </trans-unit>
+            <trans-unit id="label.response">
+                <source>label.response</source>
+                <target>Ответ</target>
+            </trans-unit>
+            <trans-unit id="label.response_code">
+                <source>label.response_code</source>
+                <target>Код ответа</target>
+            </trans-unit>
+            <trans-unit id="label.approval_code">
+                <source>label.approval_code</source>
+                <target>Код одобрения</target>
+            </trans-unit>
+            <trans-unit id="label.retrival_reference_number">
+                <source>label.retrival_reference_number</source>
+                <target>Внешний номер (RRN)</target>
+            </trans-unit>
+            <trans-unit id="label.internal_reference_number">
+                <source>label.internal_reference_number</source>
+                <target>Внутренний номер</target>
+            </trans-unit>
+            <trans-unit id="label.amount">
+                <source>label.amount</source>
+                <target>Стоимость</target>
+            </trans-unit>
+            <trans-unit id="label.description">
+                <source>label.description</source>
+                <target>Описание</target>
+            </trans-unit>
+            <trans-unit id="label.action">
+                <source>label.action</source>
+                <target>Действие</target>
+            </trans-unit>
+            <trans-unit id="label.request">
+                <source>label.request</source>
+                <target>Запрос</target>
+            </trans-unit>
+            <trans-unit id="label.reversal_request">
+                <source>label.reversal_request</source>
+                <target>Запрос аннулирования</target>
+            </trans-unit>
+        </body>
+    </file>
+</xliff>

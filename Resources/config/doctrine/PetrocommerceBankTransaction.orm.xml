@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!--
+    Copyright © 2015 Pavel A. Puchkov
+
+    This file is part of the kino-khv.ru project.
+
+    For the full copyright and license information, please view the LICENSE
+    file that was distributed with this source code.
+-->
+
+<doctrine-mapping xmlns="http://doctrine-project.org/schemas/orm/doctrine-mapping"
+                  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+                  xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
+                  http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
+
+    <entity name="ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransaction" table="petrocommerce_bank_transactions">
+        <field name="amount" type="float"/>
+        <field name="currency" type="string"/>
+        <field name="bankOrderNumber" type="integer" nullable="true"/>
+        <field name="terminalId" type="string"/>
+        <field name="transactionType" type="integer"/>
+        <field name="timestamp" type="string"/>
+        <field name="nonce" type="string"/>
+        <field name="merchantId" type="string"/>
+        <field name="messageAuthenticationCode" type="string" nullable="true"/>
+        <field name="pSign" type="string" length="512" nullable="true"/>
+        <field name="bankOrder" type="string" length="512" nullable="true"/>
+    </entity>
+
+</doctrine-mapping>
