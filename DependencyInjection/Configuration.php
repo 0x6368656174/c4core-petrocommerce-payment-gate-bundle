@@ -1,6 +1,6 @@
 <?php
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\DependencyInjection;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\DependencyInjection;
 
 use Symfony\Component\Config\Definition\Builder\TreeBuilder;
 use Symfony\Component\Config\Definition\ConfigurationInterface;

@@ -14,7 +14,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionReversalRequest" table="petrocommerce_bank_transaction_reversal_requests">
+    <entity name="ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionReversalRequest" table="petrocommerce_bank_transaction_reversal_requests">
         <field name="retrievalReferenceNumber" type="bigint"/>
         <field name="internalReferenceNumber" type="string"/>
     </entity>

@@ -14,7 +14,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse" table="petrocommerce_bank_transaction_responses">
+    <entity name="ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse" table="petrocommerce_bank_transaction_responses">
         <field name="action" type="integer"/>
         <field name="responseCode" type="string"/>
         <field name="approvalCode" type="string"/>

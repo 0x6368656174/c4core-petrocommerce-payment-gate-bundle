@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\Services;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\Services;
 
 use ItQuasar\CommonBundle\Services\Curl;
 use ItQuasar\CommonBundle\Services\FilePaths;

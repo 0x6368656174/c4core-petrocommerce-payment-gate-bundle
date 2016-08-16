@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\Entity;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity;
 
 use ItQuasar\C4CoreBundle\Common\GetterSetter;
 use ItQuasar\C4CoreBundle\Entity\BankExchangeDocument;

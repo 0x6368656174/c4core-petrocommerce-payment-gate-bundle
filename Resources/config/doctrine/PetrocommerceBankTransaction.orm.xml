@@ -14,7 +14,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransaction" table="petrocommerce_bank_transactions">
+    <entity name="ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransaction" table="petrocommerce_bank_transactions">
         <field name="amount" type="float"/>
         <field name="currency" type="string"/>
         <field name="bankOrderNumber" type="integer" nullable="true"/>

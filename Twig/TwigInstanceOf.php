@@ -10,15 +10,15 @@
 
 namespace ItQuasar\PetrocommercePaymentGateBundle\Twig;
 
-use ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest;
-use ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
-use ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionReversalRequest;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionReversalRequest;
 
 class TwigInstanceOf extends \Twig_Extension
 {
     public function getName()
     {
-        return 'petrocommerce_payment_gate_instance_of';
+        return 'c4_core_petrocommerce_payment_gate_instance_of';
     }
 
     public function getTests()

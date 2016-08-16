@@ -2,10 +2,10 @@
 
 namespace ItQuasar\PetrocommercePaymentGateBundle;
 
-use ItQuasar\PetrocommercePaymentGateBundle\DependencyInjection\ItQuasarPetrocommercePaymentGateExtension;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\DependencyInjection\ItQuasarPetrocommercePaymentGateExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
 
-class ItQuasarPetrocommercePaymentGateBundle extends Bundle
+class ItQuasarC4CorePetrocommercePaymentGateBundle extends Bundle
 {
     public function getContainerExtension()
     {

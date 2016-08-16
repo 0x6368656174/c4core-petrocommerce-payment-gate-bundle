@@ -10,8 +10,8 @@
 
 namespace ItQuasar\PetrocommercePaymentGateBundle\Tests\Services;
 
-use ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
-use ItQuasar\PetrocommercePaymentGateBundle\Services\GateService;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionResponse;
+use ItQuasar\C4CorePetrocommercePaymentGateBundle\Services\GateService;
 use Symfony\Bundle\FrameworkBundle\Test\KernelTestCase;
 
 class BankTransactionProcessorServiceTest extends KernelTestCase

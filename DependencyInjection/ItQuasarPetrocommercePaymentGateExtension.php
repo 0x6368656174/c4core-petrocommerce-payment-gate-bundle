@@ -1,6 +1,6 @@
 <?php
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\DependencyInjection;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\DependencyInjection;
 
 use Symfony\Component\DependencyInjection\ContainerBuilder;
 use Symfony\Component\Config\FileLocator;
@@ -27,6 +27,6 @@ class ItQuasarPetrocommercePaymentGateExtension extends Extension
 
     public function getAlias()
     {
-        return 'iq_petrocommerce_payment_gate';
+        return 'iq_c4_core_petrocommerce_payment_gate';
     }
 }

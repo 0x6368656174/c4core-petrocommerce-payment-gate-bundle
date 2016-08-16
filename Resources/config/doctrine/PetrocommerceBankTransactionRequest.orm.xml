@@ -14,7 +14,7 @@
                   xsi:schemaLocation="http://doctrine-project.org/schemas/orm/doctrine-mapping
                   http://doctrine-project.org/schemas/orm/doctrine-mapping.xsd">
 
-    <entity name="ItQuasar\PetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest" table="petrocommerce_bank_transaction_requests">
+    <entity name="ItQuasar\C4CorePetrocommercePaymentGateBundle\Entity\PetrocommerceBankTransactionRequest" table="petrocommerce_bank_transaction_requests">
         <field name="timezoneOffset" type="string"/>
         <field name="merchantName" type="string"/>
         <field name="merchantUrl" type="string"/>

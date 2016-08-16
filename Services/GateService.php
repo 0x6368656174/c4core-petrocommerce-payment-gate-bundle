@@ -8,7 +8,7 @@
  * file that was distributed with this source code.
  */
 
-namespace ItQuasar\PetrocommercePaymentGateBundle\Services;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle\Services;
 
 use Doctrine\ORM\EntityManager;
 use ItQuasar\C4CoreBundle\Services\FilePaths;
