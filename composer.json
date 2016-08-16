@@ -1,5 +1,5 @@
 {
-    "name": "itquasar/c4core-petrocomerce-payment-gate-bundle",
+    "name": "itquasar/c4core-petrocommerce-payment-gate-bundle",
     "license": "proprietary",
     "type": "library",
     "description": "Шлюз оплаты банка Петрокомерц для C4Core",
@@ -14,6 +14,6 @@
         "itquasar/c4core-bundel": "*"
     },
     "autoload": {
-        "psr-4": { "ItQuasar\\C4CorePetrocomercePaymentBundle\\": "" }
+        "psr-4": { "ItQuasar\\C4CorePetrocommercePaymentBundle\\": "" }
     }
 }
