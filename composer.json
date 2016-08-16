@@ -11,7 +11,7 @@
         }
     ],
     "require": {
-        "itquasar/c4core-bundel": "*"
+        "itquasar/c4core-bundle": "*"
     },
     "autoload": {
         "psr-4": { "ItQuasar\\C4CorePetrocommercePaymentBundle\\": "" }
