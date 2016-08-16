@@ -1,6 +1,6 @@
 <?php
 
-namespace ItQuasar\PetrocommercePaymentGateBundle;
+namespace ItQuasar\C4CorePetrocommercePaymentGateBundle;
 
 use ItQuasar\C4CorePetrocommercePaymentGateBundle\DependencyInjection\ItQuasarPetrocommercePaymentGateExtension;
 use Symfony\Component\HttpKernel\Bundle\Bundle;
