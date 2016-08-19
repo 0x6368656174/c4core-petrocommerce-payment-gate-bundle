@@ -254,7 +254,7 @@ class GateService extends Gate
 
         $query = $this->em->createQueryBuilder()
             ->select('t')
-            ->from('ItQuasarPetrocommercePaymentGateBundle:PetrocommerceBankTransactionResponse', 't')
+            ->from('ItQuasarC4CorePetrocommercePaymentGateBundle:PetrocommerceBankTransactionResponse', 't')
             ->andWhere('t.bankOrderNumber = :orderNumber')
             ->andWhere('t.transactionType = :transactionType')
             ->andWhere('t.timestamp = :timestamp')
@@ -273,7 +273,7 @@ class GateService extends Gate
         
         $query = $this->em->createQueryBuilder()
             ->select('r')
-            ->from('ItQuasarPetrocommercePaymentGateBundle:PetrocommerceBankTransactionRequest', 'r')
+            ->from('ItQuasarC4CorePetrocommercePaymentGateBundle:PetrocommerceBankTransactionRequest', 'r')
             ->where('r.bankOrderNumber = :orderNumber')
             ->getQuery();
         
@@ -393,7 +393,7 @@ class GateService extends Gate
         //Если запрос уже существует
         $query = $this->em->createQueryBuilder()
             ->select('r')
-            ->from('ItQuasarPetrocommercePaymentGateBundle:PetrocommerceBankTransactionRequest', 'r')
+            ->from('ItQuasarC4CorePetrocommercePaymentGateBundle:PetrocommerceBankTransactionRequest', 'r')
             ->where('r.order = :order')
             ->getQuery();
         $query->setParameter(':order', $order);

@@ -1,5 +1,5 @@
 services:
-  iq_petrocommerce_payment_gate.gate:
+  iq_c4_core_petrocommerce_payment_gate.gate:
     class: ItQuasar\C4CorePetrocommercePaymentGateBundle\Services\GateService
     arguments:
       - '@doctrine.orm.entity_manager'
@@ -21,7 +21,7 @@ services:
       - [setSingBankPublicKeyFileDev, ['%iq_c4_core_petrocommerce_payment_gate.response_sign_key_file_dev%']]
       - [setIaUrlDev, ['%iq_c4_core_petrocommerce_payment_gate.ia_url_dev%']]
 
-  iq_petrocommerce_payment_gate.notification:
+  iq_c4_core_petrocommerce_payment_gate.notification:
     class: ItQuasar\C4CorePetrocommercePaymentGateBundle\Services\NotificationService
     arguments:
       - '@iq_c4_core.curl'
@@ -38,7 +38,7 @@ services:
       - [setClientKeyFileDev, ['%iq_c4_core_petrocommerce_payment_gate.notif_client_key_file_dev%']]
       - [setCaCertFileDev, ['%iq_c4_core_petrocommerce_payment_gate.notif_ca_cert_file_dev%']]
 
-  iq_petrocommerce_payment_gate.twig_instance_of_extension:
+  iq_c4_core_petrocommerce_payment_gate.twig_instance_of_extension:
     class: ItQuasar\C4CorePetrocommercePaymentGateBundle\Twig\TwigInstanceOf
     tags:
       - { name: twig.extension }
