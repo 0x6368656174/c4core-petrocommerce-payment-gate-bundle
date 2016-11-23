@@ -388,9 +388,8 @@ class GateService extends Gate
         return $request;
     }
 
-    public function createPayRequest(Order $order, array $extraParameters = array())
+    public function getPayRequest(Order $order)
     {
-        //Если запрос уже существует
         $query = $this->em->createQueryBuilder()
             ->select('r')
             ->from('ItQuasarC4CorePetrocommercePaymentGateBundle:PetrocommerceBankTransactionRequest', 'r')
@@ -398,7 +397,13 @@ class GateService extends Gate
             ->getQuery();
         $query->setParameter(':order', $order);
 
-        $oldRequest = $query->getOneOrNullResult();
+        return $query->getOneOrNullResult();
+    }
+
+    public function createPayRequest(Order $order, array $extraParameters = array())
+    {
+        //Если запрос уже существует
+        $oldRequest = $this->getPayRequest($order);
 
         if ($oldRequest)
             return $oldRequest;
@@ -477,6 +482,11 @@ class GateService extends Gate
         $bankResponse->setPSign($httpRequest->get('P_SIGN'));
         
         return $bankResponse;
+    }
+
+    public function getHttpPayRequest(Order $order) : HttpPayRequest
+    {
+        throw new \Exception("Not implemented");
     }
 
     public function createHttpPayRequest(BankExchangeDocument $bankRequest)
